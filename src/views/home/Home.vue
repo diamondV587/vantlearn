@@ -27,9 +27,10 @@ export default {
     }
   },
   mounted() {
-    axios.get('/mock/news').then(res => {
-        console.log(res.data)
-    })
+    axios.get('/user/userinfo')
+    .then(({data})=>{
+      console.log(data);
+    });
   }
  }
 </script>
